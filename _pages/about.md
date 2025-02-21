@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I received my Bachelor degree in **Physics** at [Universitat de Barcelona (UB)](https://www.ub.edu) in 2018. One year later I got my **Msc in Artificial Intelligence** from [Universitat Pompeu Fabra (UPF)](https://www.upf.edu/) in Barcelona. 
+I'm Xavier, and my academic journey began with a Bachelor's degree in **Physics** from the [Universitat de Barcelona (UB)](https://www.ub.edu) in 2018, followed by a **Master's in Artificial Intelligence** from [Universitat Pompeu Fabra (UPF)](https://www.upf.edu/) in 2019. I further expanded my expertise by pursuing advanced studies with a **Master's in High Energy Physics, Astrophysics, and Cosmology** at [Universitat Autonoma de Barcelona](https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467950436.html).
 
-I have been 3 and a half years working in the industry as a Data Scientist, and coursing a **Msc in Astrophysics and Cosmology** as a hobby. Currently doing my **PhD on Sound Localization** at [Intelligent Multimodal Vision Analysis (IMVA)](https://www.upf.edu/en/web/universitat/-/grup-de-recerca-en-processament-d-imatges-i-visio-per-computador), under Prof. [Gloria Haro](https://www.upf.edu/web/gloria-haro)'s supervision. 
+For the past three and a half years, I've worked as a Data Scientist in industry, applying my skills in real-world scenarios. Currently, I'm in the third year of my PhD at UPF, focusing on **Audio-Visual Sound Source Localization** within the [Intelligent Multimodal Vision Analysis (IMVA)](https://www.upf.edu/en/web/universitat/-/grup-de-recerca-en-processament-d-imatges-i-visio-per-computador) group under Professor [Gloria Haro](https://www.upf.edu/web/gloria-haro)'s supervision. My research integrates multimodal deep learning techniques—leveraging both video and audio—to push the boundaries of computer vision. An enriching stint at New York University also broadened my perspective and deepened my research experience.
 
-I am interested in the artificial intelligence field, more specifically in Deep Learning and computer vision.
+My work is driven by a passion for deep learning and computer vision, and I’m excited to continue contributing to the advancement of artificial intelligence through innovative research and practical applications.
 
 <!-- Publications Section -->
 ## Publications
