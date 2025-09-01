@@ -70,8 +70,21 @@ My work is driven by a passion for deep learning and computer vision, and I’m 
       </div>
     </div>
   </li>
+  {% unless forloop.last %}
+    <hr class="publication-divider">
+  {% endunless %}
   {% endfor %}
 </ul>
+
+<style>
+.publication-divider {
+  border: none;
+  border-top: 1.5px dashed #cfd8dc; /* subtle, light blue-grey */
+  margin: 18px 0 18px 0;
+  width: 100%;
+  opacity: 0.5;
+}
+</style>
 
 <style>
   .publication-list {
