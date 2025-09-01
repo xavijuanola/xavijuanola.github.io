@@ -71,7 +71,7 @@ My work is driven by a passion for deep learning and computer vision, and I’m 
     </div>
   </li>
   {% unless forloop.last %}
-    <hr class="publication-divider">
+    <hr class="publication-divider" style="border: none; border-top: 3px solid #90a4ae; margin: 18px 0 18px 0; width: 100%; opacity: 0.85;">
   {% endunless %}
   {% endfor %}
 </ul>
