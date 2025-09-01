@@ -21,7 +21,7 @@ image: "/assets/images/publications/blank.png"
 projecturl: "http://www.ipol.im/pub/art/2024/525/"
 githuburl: ""
 arxivurl: ""
-paperurl: 'http://www.ipol.im/pub/art/2024/525/article.pdf'
+paperpdf: 'http://www.ipol.im/pub/art/2024/525/article.pdf'
 citation: 'Xavier Juanola, Gloria Haro. (2023). &quot;A Brief Analysis of SLAVC method for Sound Source Localization.&quot; <i>Image Processing On Line</i>'
 ---
 
