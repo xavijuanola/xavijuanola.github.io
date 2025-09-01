@@ -44,21 +44,21 @@ My work is driven by a passion for deep learning and computer vision, and I’m 
         </a>
         {% endif %}
         
-        {% if post.paperpdf and post.paperpdf != "" %}
-        <a href="{{ post.paperpdf }}" target="_blank" class="publication-link">
-          <img src="/assets/images/icons/pdf.png" alt="PDF icon" width="16px" height="16px"> PDF
+        {% if post.proceedings and post.proceedings != "" %}
+        <a href="{{ post.proceedings }}" target="_blank" class="publication-link">
+          <img src="/assets/images/icons/proceedings.png" alt="Proceedings icon" width="16px" height="16px"> Proceedings
         </a>
         {% endif %}
 
-        {% if post.paperurl and post.paperurl != "" %}
-        <a href="{{ post.paperurl }}" target="_blank" class="publication-link">
-          <img src="/assets/images/icons/pdf.png" alt="PDF icon" width="16px" height="16px"> PDF
-        </a>
-        {% endif %}
-        
         {% if post.arxivurl and post.arxivurl != "" %}
         <a href="{{ post.arxivurl }}" target="_blank" class="publication-link">
           <img src="/assets/images/icons/arxiv.png" alt="arXiv icon" width="16px" height="16px"> arXiv
+        </a>
+        {% endif %}
+
+        {% if post.paperpdf and post.paperpdf != "" %}
+        <a href="{{ post.paperpdf }}" target="_blank" class="publication-link">
+          <img src="/assets/images/icons/pdf.png" alt="PDF icon" width="16px" height="16px"> PDF
         </a>
         {% endif %}
         
