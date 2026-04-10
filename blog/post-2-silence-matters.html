@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Silence Matters in Sound Localization Models — Xavier Juanola Molet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="../index.html" class="navbar__logo" style="color:var(--color-text);">XJ<span class="accent">.</span></a>
+      <ul class="navbar__links" id="navLinks" style="display:flex;">
+        <li><a href="../index.html#publications" style="color:var(--color-muted);">Publications</a></li>
+        <li><a href="index.html" style="color:var(--color-accent);font-weight:700;">Blog</a></li>
+        <li><a href="../index.html#contact" class="btn btn-primary" style="padding:8px 18px;">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="post-main">
+    <div class="post-container">
+      <a href="index.html" class="post-back"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+      <div class="post-meta">
+        <span class="badge">Research Insight</span>
+        <span class="post-date">April 2026</span>
+      </div>
+      <h1 class="post-title">Why Silence Matters in Sound Localization Models</h1>
+      <div class="post-author">
+        <img src="../assets/images/profile.png" alt="Xavier Juanola Molet">
+        <div>
+          <p class="post-author__name">Xavier Juanola Molet</p>
+          <p class="post-author__role">PhD Candidate · UPF</p>
+        </div>
+      </div>
+      <div class="post-content">
+        <p>One of the first things you learn when building a machine learning system is that models fail in surprising ways at the boundaries of their training distribution. For <strong>Visual Sound Source Localization (VSSL)</strong> models, one of those surprising failure modes is deceptively simple: <em>what happens when there's nothing to hear?</em></p>
+
+        <h2>The Assumption Buried in Every Benchmark</h2>
+        <p>The standard VSSL evaluation protocol assumes that the audio always corresponds to something visible in the image — a dog barking at a dog, a piano playing next to a pianist. This is called a <strong>positive audio</strong> case. Models are trained and evaluated almost exclusively on these positive cases.</p>
+        <p>But the real world isn't so clean. Audio can be:</p>
+        <ul>
+          <li><strong>Silence</strong> — nothing is making a sound</li>
+          <li><strong>Noise</strong> — ambient sound with no meaningful source</li>
+          <li><strong>Offscreen</strong> — the sound source exists but is outside the camera frame</li>
+        </ul>
+        <p>We call these <strong>negative audio</strong> cases. And when we tested state-of-the-art models on them, the results were revealing.</p>
+
+        <h2>What We Found</h2>
+        <p>In our work at UPF and NYU, we evaluated a wide range of SOTA VSSL models using negative audio inputs. The finding was consistent: <strong>most models confidently localize a "sound source" even when the audio is pure silence or random noise</strong>.</p>
+        <blockquote>These models aren't localizing audio. They're localizing visually salient regions — and using audio as a justification after the fact.</blockquote>
+        <p>This is a significant problem. It means that standard benchmarks overestimate real-world model performance. A model that scores well on positive-only evaluation might be completely useless when deployed in conditions where negative audio is possible — which is most real-world scenarios.</p>
+
+        <h2>Why This Happens</h2>
+        <p>The root cause is in the training signal. Self-supervised VSSL models learn to find correlations between audio and visual features. But because they're only ever trained on positive pairs, they learn to always produce a localization output — there's no mechanism to say "I don't hear anything relevant here."</p>
+        <p>The model has never learned to <em>abstain</em>. It doesn't know what silence looks like — or rather, it doesn't know that silence should produce a flat, uninformative heatmap.</p>
+
+        <h2>Our Solution: Learning from Silence and Noise</h2>
+        <p>In <a href="../index.html#publications">SSL-SaN</a> (accepted to BMVC 2025), we propose a simple but effective training strategy: include silence and noise in the training set as <strong>negative examples</strong>. When the model sees silence, it should learn to produce a near-uniform heatmap — no confident localization.</p>
+        <p>We also introduce new evaluation metrics that measure a model's performance on <em>both</em> positive and negative audio simultaneously. This gives a much more honest picture of what these models can actually do.</p>
+        <p>The results are promising: SSL-SaN achieves state-of-the-art performance among self-supervised models on standard benchmarks, while being dramatically more robust to negative audio.</p>
+
+        <h2>Why This Matters for Industry</h2>
+        <p>If you're building a system that relies on audio-visual understanding — robot perception, smart surveillance, accessibility tools — you need models that know when to say "I don't know." A model that hallucinates sound sources under silence is not just inaccurate; it can be actively misleading.</p>
+        <p>The lesson generalizes beyond VSSL: always test your model at the boundaries of its training distribution, and specifically with inputs that should produce null or negative outputs. The failures there are often the most informative.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">Xavier Juanola Molet</p>
+      <p class="footer__copy">PhD Candidate · UPF · Barcelona</p>
+      <div class="footer__socials">
+        <a href="https://scholar.google.com/citations?user=8RTQAbMAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://github.com/xavijuanola" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/xavijuanola" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:xavier.juanola@upf.edu"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
