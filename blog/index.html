@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Xavier Juanola Molet</title>
+  <meta name="description" content="Notes and thoughts on audio-visual ML, research, and career from Xavier Juanola Molet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="../index.html" class="navbar__logo" style="color:var(--color-text);">XJ<span class="accent">.</span></a>
+      <ul class="navbar__links" id="navLinks" style="display:flex;">
+        <li><a href="../index.html#about" style="color:var(--color-muted);">About</a></li>
+        <li><a href="../index.html#publications" style="color:var(--color-muted);">Publications</a></li>
+        <li><a href="../index.html#projects" style="color:var(--color-muted);">Projects</a></li>
+        <li><a href="index.html" style="color:var(--color-accent);font-weight:700;">Blog</a></li>
+        <li><a href="../index.html#contact" class="btn btn-primary" style="padding:8px 18px;">Contact</a></li>
+      </ul>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span style="background:var(--color-text);"></span>
+        <span style="background:var(--color-text);"></span>
+        <span style="background:var(--color-text);"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="blog-main">
+    <div class="container">
+      <div class="blog-header">
+        <p class="section-label">Writing</p>
+        <h1 class="blog-header__title">Notes &amp; Blog</h1>
+        <p class="blog-header__sub">Thoughts on audio-visual ML, research methods, and career paths in AI.</p>
+      </div>
+
+      <div class="blog-grid">
+
+        <a href="post-1-vssl-intro.html" class="blog-card">
+          <div class="blog-card__meta">
+            <span class="badge">Research</span>
+            <span class="blog-card__date">April 2026</span>
+          </div>
+          <h2 class="blog-card__title">What is Audio-Visual Sound Source Localization?</h2>
+          <p class="blog-card__excerpt">An accessible introduction to the task of locating where sounds come from in a video — and why it's harder than it sounds.</p>
+          <span class="blog-card__read">Read more <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="post-2-silence-matters.html" class="blog-card">
+          <div class="blog-card__meta">
+            <span class="badge">Research Insight</span>
+            <span class="blog-card__date">April 2026</span>
+          </div>
+          <h2 class="blog-card__title">Why Silence Matters in Sound Localization Models</h2>
+          <p class="blog-card__excerpt">Most state-of-the-art models fail when there's nothing to hear. Here's why that matters and what we can do about it.</p>
+          <span class="blog-card__read">Read more <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="post-3-physics-to-ai.html" class="blog-card">
+          <div class="blog-card__meta">
+            <span class="badge">Career</span>
+            <span class="blog-card__date">April 2026</span>
+          </div>
+          <h2 class="blog-card__title">From Physics to AI: My Unconventional PhD Path</h2>
+          <p class="blog-card__excerpt">How a degree in Theoretical Physics, a stint in astrophysics, and 3 years in industry led me to a PhD in machine learning.</p>
+          <span class="blog-card__read">Read more <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">Xavier Juanola Molet</p>
+      <p class="footer__copy">PhD Candidate · UPF · Barcelona</p>
+      <div class="footer__socials">
+        <a href="https://scholar.google.com/citations?user=8RTQAbMAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://github.com/xavijuanola" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/xavijuanola" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:xavier.juanola@upf.edu"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is Audio-Visual Sound Source Localization? — Xavier Juanola Molet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="../index.html" class="navbar__logo" style="color:var(--color-text);">XJ<span class="accent">.</span></a>
+      <ul class="navbar__links" id="navLinks" style="display:flex;">
+        <li><a href="../index.html#publications" style="color:var(--color-muted);">Publications</a></li>
+        <li><a href="index.html" style="color:var(--color-accent);font-weight:700;">Blog</a></li>
+        <li><a href="../index.html#contact" class="btn btn-primary" style="padding:8px 18px;">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="post-main">
+    <div class="post-container">
+      <a href="index.html" class="post-back"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+      <div class="post-meta">
+        <span class="badge">Research</span>
+        <span class="post-date">April 2026</span>
+      </div>
+      <h1 class="post-title">What is Audio-Visual Sound Source Localization?</h1>
+      <div class="post-author">
+        <img src="../assets/images/profile.png" alt="Xavier Juanola Molet">
+        <div>
+          <p class="post-author__name">Xavier Juanola Molet</p>
+          <p class="post-author__role">PhD Candidate · UPF</p>
+        </div>
+      </div>
+      <div class="post-content">
+        <p>Imagine you're watching a video of a busy street. A car honks, a dog barks, someone plays guitar in the background. Your brain instantly knows where each sound is coming from. You don't have to think about it — you just <em>see</em> it. This intuitive ability is what the field of <strong>Audio-Visual Sound Source Localization (VSSL)</strong> tries to teach computers.</p>
+
+        <h2>The Problem</h2>
+        <p>Given a video frame and its corresponding audio, the goal of VSSL is to produce a <strong>heatmap</strong> — a spatial map showing the probability that each pixel in the image is the source of the current sound. If a dog is barking, the heatmap should light up around the dog. If a guitar is playing, it should highlight the guitarist's hands.</p>
+        <p>This sounds simple, but it's deceptively hard. The model needs to learn, without any human labels, that certain visual patterns tend to produce certain sounds — and that these correspondences are meaningful even across very different scenes and contexts.</p>
+
+        <h2>Why Does It Matter?</h2>
+        <p>VSSL has applications across a surprising range of domains:</p>
+        <ul>
+          <li><strong>Robotics</strong> — a robot that can identify where sounds come from can navigate and interact with its environment more naturally</li>
+          <li><strong>Accessibility</strong> — sound localization can help create richer captions or spatial audio descriptions for people with hearing impairments</li>
+          <li><strong>Video understanding</strong> — knowing what's making a sound helps a model understand the semantics of a scene at a deeper level</li>
+          <li><strong>Audio-visual editing</strong> — you can't edit what you can't find</li>
+        </ul>
+
+        <h2>How Do Current Models Work?</h2>
+        <p>Most state-of-the-art VSSL models are trained in a <strong>self-supervised</strong> way — they don't need labeled data. Instead, they rely on a simple assumption: in natural videos, what you see and what you hear are semantically related. A video of a piano being played will have audio that sounds like a piano.</p>
+        <p>The key ingredient is <strong>contrastive learning</strong>. The model learns to map audio and visual representations into a shared embedding space, where matching audio-visual pairs are close together and mismatched pairs are far apart. At inference time, the model generates a similarity map between the audio embedding and each spatial location in the image — the brighter the location, the more likely it is the sound source.</p>
+
+        <h2>What's Still Broken</h2>
+        <p>Despite impressive results on standard benchmarks, current VSSL models have a critical blind spot: <strong>they don't handle negative audio well</strong>. What happens when there's silence? Or noise? Or a sound coming from off-screen?</p>
+        <blockquote>Most models still "see" a sound source even when they hear nothing. They're pattern-matching visual content, not truly localizing audio.</blockquote>
+        <p>This is exactly the problem my research addresses. In my work on <a href="../index.html#publications">SSL-SaN</a>, we introduce training strategies and evaluation metrics that explicitly account for negative audio — making models more robust and more honest about what they can and cannot localize.</p>
+
+        <h2>Conclusion</h2>
+        <p>Audio-Visual Sound Source Localization is a fascinating intersection of computer vision, audio processing, and self-supervised learning. It's a task that seems easy for humans but remains genuinely hard for machines — especially in the messy, ambiguous conditions of the real world. If you're curious to learn more, check out my <a href="../index.html#publications">publications</a> or <a href="post-2-silence-matters.html">read about why silence breaks most models</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">Xavier Juanola Molet</p>
+      <p class="footer__copy">PhD Candidate · UPF · Barcelona</p>
+      <div class="footer__socials">
+        <a href="https://scholar.google.com/citations?user=8RTQAbMAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://github.com/xabijuanola" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/xavijuanola" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:xavier.juanola@upf.edu"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
