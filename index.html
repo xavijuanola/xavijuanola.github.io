@@ -67,7 +67,430 @@
     </div>
   </section>
 
-  <!-- MORE SECTIONS WILL BE ADDED IN SUBSEQUENT TASKS -->
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about__grid">
+      <div class="about__photo reveal">
+        <img src="assets/images/profile.png" alt="Xavier Juanola Molet" class="about__img">
+        <div class="about__social">
+          <a href="https://scholar.google.com/citations?user=8RTQAbMAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://github.com/xavijuanola" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/xavijuanola" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:xavier.juanola@upf.edu" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title" style="margin-bottom:24px;">Physicist turned AI Researcher</h2>
+        <p class="reveal">I'm Xavier, a PhD candidate at <a href="https://www.upf.edu" target="_blank" rel="noopener">Universitat Pompeu Fabra</a> (Barcelona), working on <strong>Audio-Visual Sound Source Localization</strong> within the <a href="https://www.upf.edu/en/web/universitat/-/grup-de-recerca-en-processament-d-imatges-i-visio-per-computador" target="_blank" rel="noopener">IMVA group</a> under <a href="https://www.upf.edu/web/gloria-haro" target="_blank" rel="noopener">Prof. Gloria Haro</a> and co-advised by <a href="https://steinhardt.nyu.edu/people/magdalena-fuentes" target="_blank" rel="noopener">Prof. Magdalena Fuentes</a> (NYU). My research asks: <em>can models learn to localize sound in video — even when the audio is silence, noise, or from offscreen?</em></p>
+        <p class="reveal">My path has been unconventional. I started with a <strong>BS in Theoretical Physics</strong> (UB), followed by two master's degrees — <strong>Intelligent Interactive Systems</strong> (UPF) and <strong>Astrophysics &amp; Cosmology</strong> (UAB). Before the PhD, I spent 3+ years as a <strong>Data Scientist and AI Engineer</strong> in industry (DRIVING01, Schneider Electric), building NLP systems and predictive models. A visiting scholar stint at <strong>NYU MARL</strong> in 2024 deepened my research collaborations and led to an ICASSP 2025 publication.</p>
+        <p class="reveal">I'm supported by an <strong>FPI doctoral fellowship</strong> from Spain's Ministry of Science and am part of the MuVAU research project. When not doing research, I teach <strong>Calculus II</strong> labs at UPF.</p>
+        <div class="about__education reveal">
+          <h3>Education</h3>
+          <ul>
+            <li><i class="fas fa-circle-dot"></i> <strong>PhD, Information &amp; Communication Technologies</strong> — UPF (2022–present)</li>
+            <li><i class="fas fa-circle-dot"></i> <strong>MS, Astrophysics &amp; Cosmology</strong> — UAB (2020–2021)</li>
+            <li><i class="fas fa-circle-dot"></i> <strong>MS, Intelligent Interactive Systems</strong> — UPF (2019–2020)</li>
+            <li><i class="fas fa-circle-dot"></i> <strong>BS, Theoretical Physics</strong> — UB (2014–2019)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="container">
+      <p class="section-label">Research</p>
+      <h2 class="section-title">Publications</h2>
+      <div class="pub-list">
+
+        <!-- BMVC 2025 -->
+        <article class="pub-card reveal">
+          <div class="pub-card__thumb">
+            <img src="assets/images/publications/SSL_SaN.png" alt="SSL-SaN paper thumbnail">
+          </div>
+          <div class="pub-card__body">
+            <div class="pub-card__meta">
+              <span class="badge">BMVC 2025</span>
+              <span class="pub-card__year">2025</span>
+            </div>
+            <h3 class="pub-card__title">
+              <a href="https://arxiv.org/abs/2508.21761" target="_blank" rel="noopener">
+                Learning from Silence and Noise for Visual Sound Source Localization Models
+              </a>
+            </h3>
+            <p class="pub-card__authors">
+              <strong>Xavier Juanola</strong>,
+              <a href="https://steinhardt.nyu.edu/people/giovana-morais" target="_blank" rel="noopener">Giovana Morais</a>,
+              <a href="https://steinhardt.nyu.edu/people/magdalena-fuentes" target="_blank" rel="noopener">Magdalena Fuentes</a>,
+              <a href="https://www.upf.edu/web/gloria-haro" target="_blank" rel="noopener">Gloria Haro</a>
+            </p>
+            <div class="pub-card__links">
+              <a href="https://xavijuanola.github.io/SSL-SaN" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-globe"></i> Project</a>
+              <a href="https://arxiv.org/abs/2508.21761" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-file-alt"></i> arXiv</a>
+              <a href="https://arxiv.org/pdf/2508.21761" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+              <a href="https://github.com/xavijuanola/SSL_SaN" target="_blank" rel="noopener" class="pub-link"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CVPR Workshop 2025 -->
+        <article class="pub-card reveal">
+          <div class="pub-card__thumb">
+            <img src="assets/images/publications/vssl_eval.png" alt="VSSL paper thumbnail">
+          </div>
+          <div class="pub-card__body">
+            <div class="pub-card__meta">
+              <span class="badge">CVPR Workshop 2025</span>
+              <span class="pub-card__year">2025</span>
+            </div>
+            <h3 class="pub-card__title">
+              <a href="https://sightsound.org/papers/2025/Xavier_Juanola_Visual_Sound_Source_Localization_Assessing_Performance_with_Both_Positive_and_Negative_Audio.pdf" target="_blank" rel="noopener">
+                Visual Sound Source Localization: Assessing Performance with Both Positive and Negative Audio
+              </a>
+            </h3>
+            <p class="pub-card__authors">
+              <strong>Xavier Juanola</strong>,
+              <a href="https://steinhardt.nyu.edu/people/giovana-morais" target="_blank" rel="noopener">Giovana Morais</a>,
+              <a href="https://steinhardt.nyu.edu/people/magdalena-fuentes" target="_blank" rel="noopener">Magdalena Fuentes</a>,
+              <a href="https://www.upf.edu/web/gloria-haro" target="_blank" rel="noopener">Gloria Haro</a>
+            </p>
+            <div class="pub-card__links">
+              <a href="https://sightsound.org/" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-book"></i> Proceedings</a>
+              <a href="https://sightsound.org/papers/2025/Xavier_Juanola_Visual_Sound_Source_Localization_Assessing_Performance_with_Both_Positive_and_Negative_Audio.pdf" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ICASSP 2025 -->
+        <article class="pub-card reveal">
+          <div class="pub-card__thumb">
+            <img src="assets/images/publications/vssl_eval.png" alt="ICASSP paper thumbnail">
+          </div>
+          <div class="pub-card__body">
+            <div class="pub-card__meta">
+              <span class="badge">ICASSP 2025</span>
+              <span class="pub-card__year">2025</span>
+            </div>
+            <h3 class="pub-card__title">
+              <a href="https://arxiv.org/abs/2410.01020" target="_blank" rel="noopener">
+                A Critical Assessment of Visual Sound Source Localization Models Including Negative Audio
+              </a>
+            </h3>
+            <p class="pub-card__authors">
+              <strong>Xavier Juanola</strong>,
+              <a href="https://www.upf.edu/web/gloria-haro" target="_blank" rel="noopener">Gloria Haro</a>,
+              <a href="https://steinhardt.nyu.edu/people/magdalena-fuentes" target="_blank" rel="noopener">Magdalena Fuentes</a>
+            </p>
+            <div class="pub-card__links">
+              <a href="https://xavijuanola.github.io/vssleval" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-globe"></i> Project</a>
+              <a href="https://arxiv.org/abs/2410.01020" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-file-alt"></i> arXiv</a>
+              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10890384" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+              <a href="https://ieeexplore.ieee.org/document/10890384" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-book"></i> Proceedings</a>
+              <a href="https://github.com/xavijuanola/vssl_eval" target="_blank" rel="noopener" class="pub-link"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- IPOL 2024 -->
+        <article class="pub-card reveal">
+          <div class="pub-card__thumb pub-card__thumb--blank">
+            <img src="assets/images/publications/blank.png" alt="IPOL paper thumbnail">
+          </div>
+          <div class="pub-card__body">
+            <div class="pub-card__meta">
+              <span class="badge">IPOL MLBriefs 2024</span>
+              <span class="pub-card__year">2024</span>
+            </div>
+            <h3 class="pub-card__title">
+              <a href="http://www.ipol.im/pub/art/2024/525/" target="_blank" rel="noopener">
+                A Brief Analysis of SLAVC method for Sound Source Localization
+              </a>
+            </h3>
+            <p class="pub-card__authors">
+              <strong>Xavier Juanola</strong>,
+              <a href="https://www.upf.edu/web/gloria-haro" target="_blank" rel="noopener">Gloria Haro</a>
+            </p>
+            <div class="pub-card__links">
+              <a href="http://www.ipol.im/pub/art/2024/525/" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-globe"></i> Paper page</a>
+              <a href="http://www.ipol.im/pub/art/2024/525/article.pdf" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label">Work</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <i class="fas fa-volume-xmark project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="https://github.com/xavijuanola/SSL_SaN" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://xavijuanola.github.io/SSL-SaN" target="_blank" rel="noopener" title="Project page"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-card__title">SSL-SaN</h3>
+          <p class="project-card__desc">Self-supervised model for visual sound source localization robust to negative audio — silence, noise, and offscreen sounds. Introduces new metrics and extended evaluation benchmark IS3+.</p>
+          <div class="project-card__tags">
+            <span class="badge">PyTorch</span>
+            <span class="badge">Audio-Visual</span>
+            <span class="badge">Self-supervised</span>
+            <span class="badge">BMVC 2025</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <i class="fas fa-magnifying-glass-chart project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="https://github.com/xavijuanola/vssl_eval" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://xavijuanola.github.io/vssleval" target="_blank" rel="noopener" title="Project page"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-card__title">VSSL Eval</h3>
+          <p class="project-card__desc">Extended benchmark and new metrics for rigorous evaluation of visual sound source localization models. Tests models in scenarios with negative audio (silence, noise, offscreen).</p>
+          <div class="project-card__tags">
+            <span class="badge">Evaluation</span>
+            <span class="badge">Benchmarking</span>
+            <span class="badge">ICASSP 2025</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <i class="fas fa-headphones project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="http://www.ipol.im/pub/art/2024/525/" target="_blank" rel="noopener" title="Interactive demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-card__title">SLAVC Analysis</h3>
+          <p class="project-card__desc">Interactive analysis and online executable demo of the SLAVC self-supervised sound source localization method. Users can test the model on custom image-audio pairs.</p>
+          <div class="project-card__tags">
+            <span class="badge">Demo</span>
+            <span class="badge">IPOL 2024</span>
+            <span class="badge">Interactive</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label">Expertise</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category__title"><i class="fas fa-code"></i> Languages</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><i class="fab fa-python"></i> Python</li>
+            <li class="skill-item"><span class="skill-icon-text">∫</span> MATLAB</li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category__title"><i class="fas fa-brain"></i> ML / Deep Learning</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><i class="fas fa-fire"></i> PyTorch (torchvision, etc.)</li>
+            <li class="skill-item"><i class="fas fa-robot"></i> HuggingFace</li>
+            <li class="skill-item"><i class="fas fa-chart-line"></i> scikit-learn</li>
+            <li class="skill-item"><i class="fas fa-eye"></i> OpenCLIP</li>
+            <li class="skill-item"><i class="fas fa-layer-group"></i> timm</li>
+            <li class="skill-item"><i class="fas fa-table"></i> NumPy · Pandas</li>
+            <li class="skill-item"><i class="fas fa-bolt"></i> einops · Lightning</li>
+            <li class="skill-item"><i class="fas fa-ellipsis"></i> etc.</li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category__title"><i class="fas fa-waveform-lines"></i> Audio / Vision</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><i class="fas fa-music"></i> librosa</li>
+            <li class="skill-item"><i class="fas fa-camera"></i> OpenCV</li>
+            <li class="skill-item"><i class="fas fa-dinosaur"></i> DINO · CLIP</li>
+            <li class="skill-item"><i class="fas fa-ellipsis"></i> etc.</li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category__title"><i class="fas fa-wrench"></i> Tools</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><i class="fab fa-git-alt"></i> Git</li>
+            <li class="skill-item"><i class="fab fa-docker"></i> Docker · Singularity</li>
+            <li class="skill-item"><i class="fas fa-server"></i> HPC · SLURM</li>
+            <li class="skill-item"><i class="fas fa-chart-bar"></i> W&amp;B</li>
+            <li class="skill-item"><i class="fas fa-book-open"></i> Jupyter · LaTeX</li>
+            <li class="skill-item"><i class="fas fa-chart-pie"></i> Power BI</li>
+            <li class="skill-item"><i class="fas fa-ellipsis"></i> etc.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label">Background</p>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card__header">
+              <div>
+                <h3 class="timeline-card__title">PhD Candidate</h3>
+                <p class="timeline-card__org"><a href="https://www.upf.edu" target="_blank" rel="noopener">Universitat Pompeu Fabra</a> · Barcelona</p>
+              </div>
+              <span class="timeline-card__date">Nov 2022 – present</span>
+            </div>
+            <p class="timeline-card__desc">Researching audio-visual sound source localization in the IMVA group. Advisors: Gloria Haro (UPF) and Magdalena Fuentes (NYU). FPI doctoral scholarship. Part of the MuVAU project (Spanish Ministry of Science).</p>
+            <div class="timeline-card__tags">
+              <span class="badge">Deep Learning</span><span class="badge">Audio-Visual</span><span class="badge">Research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card__header">
+              <div>
+                <h3 class="timeline-card__title">Visiting Scholar</h3>
+                <p class="timeline-card__org"><a href="https://steinhardt.nyu.edu/departments/music-and-performing-arts-professions/research/marl" target="_blank" rel="noopener">NYU MARL</a> · New York</p>
+              </div>
+              <span class="timeline-card__date">2024</span>
+            </div>
+            <p class="timeline-card__desc">Collaborated with Magdalena Fuentes on sound localization research. Culminated in ICASSP 2025 publication.</p>
+            <div class="timeline-card__tags">
+              <span class="badge">Research</span><span class="badge">Collaboration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card__header">
+              <div>
+                <h3 class="timeline-card__title">Data Scientist</h3>
+                <p class="timeline-card__org">Schneider Electric · Barcelona</p>
+              </div>
+              <span class="timeline-card__date">2021 – 2022</span>
+            </div>
+            <p class="timeline-card__desc">Led predictive modeling using Salesforce data to assess offer acceptance probabilities. Contributed to AI conversational agent development. Served as global AI consultant.</p>
+            <div class="timeline-card__tags">
+              <span class="badge">ML</span><span class="badge">NLP</span><span class="badge">Consulting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card__header">
+              <div>
+                <h3 class="timeline-card__title">AI/NLP Engineer → Data Scientist</h3>
+                <p class="timeline-card__org">DRIVING01 · Barcelona</p>
+              </div>
+              <span class="timeline-card__date">2019 – 2021</span>
+            </div>
+            <p class="timeline-card__desc">Built AI conversational agents for real estate and Liceu using NLP and neural networks. Later developed ML predictive models for Chupa Chups, COMSA Service, and real estate. Created Power BI dashboards.</p>
+            <div class="timeline-card__tags">
+              <span class="badge">NLP</span><span class="badge">ML</span><span class="badge">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="service-block reveal">
+        <h3 class="service-block__title">Service</h3>
+        <ul class="service-list">
+          <li><i class="fas fa-users"></i> <strong>Organizing Committee</strong> — <a href="https://lamir-workshop.github.io" target="_blank" rel="noopener">LAMIR 2024</a></li>
+          <li><i class="fas fa-code-branch"></i> <strong>Hackathon Organization</strong> — <a href="https://lamir-workshop.github.io" target="_blank" rel="noopener">LAMIR 2024</a></li>
+          <li><i class="fas fa-check-double"></i> <strong>Reviewer</strong> — <a href="https://lamir-workshop.github.io" target="_blank" rel="noopener">LAMIR 2024</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEACHING -->
+  <section id="teaching">
+    <div class="container">
+      <p class="section-label">Education</p>
+      <h2 class="section-title">Teaching</h2>
+      <div class="teaching-card reveal">
+        <div class="teaching-card__icon"><i class="fas fa-chalkboard-user"></i></div>
+        <div class="teaching-card__body">
+          <h3>Calculus II (23952) — Labs &amp; Seminars</h3>
+          <p class="teaching-card__org">Universitat Pompeu Fabra · Barcelona</p>
+          <p class="teaching-card__period">Jan–March 2022 · 2023 · 2024 · 2025 <span class="badge">4 years</span></p>
+          <p class="teaching-card__desc">Teaching assistant for laboratory sessions and seminars. Topics: multivariable functions, domain and image, curves and surfaces, partial derivatives, tangent subspaces, Taylor approximation, multiple integration, and gradient descent optimization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact__inner">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Contact</h2>
+      <p class="contact__sub reveal">Interested in collaboration, research, or just want to chat about audio-visual ML? Reach out.</p>
+      <div class="contact__links reveal">
+        <a href="mailto:xavier.juanola@upf.edu" class="contact-link">
+          <i class="fas fa-envelope"></i>
+          <span>xavier.juanola@upf.edu</span>
+        </a>
+        <a href="https://scholar.google.com/citations?user=8RTQAbMAAAAJ&hl=en" target="_blank" rel="noopener" class="contact-link">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Google Scholar</span>
+        </a>
+        <a href="https://github.com/xavijuanola" target="_blank" rel="noopener" class="contact-link">
+          <i class="fab fa-github"></i>
+          <span>xavijuanola</span>
+        </a>
+        <a href="https://linkedin.com/in/xavijuanola" target="_blank" rel="noopener" class="contact-link">
+          <i class="fab fa-linkedin-in"></i>
+          <span>xavijuanola</span>
+        </a>
+      </div>
+      <div class="reveal" style="margin-top:32px;">
+        <a href="cv/Academic_CV_Xavier_Juanola.pdf" target="_blank" class="btn btn-primary btn-lg">
+          <i class="fas fa-file-alt"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">Xavier Juanola Molet</p>
+      <p class="footer__copy">PhD Candidate · UPF · Barcelona</p>
+      <div class="footer__socials">
+        <a href="https://scholar.google.com/citations?user=8RTQAbMAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://github.com/xavijuanola" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/xavijuanola" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:xavier.juanola@upf.edu"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
 
   <script src="assets/js/main.js"></script>
 </body>
