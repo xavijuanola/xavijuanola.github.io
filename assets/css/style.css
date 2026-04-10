@@ -120,14 +120,14 @@ section:nth-child(even) {
   box-shadow: 0 4px 16px rgba(99,102,241,0.4);
 }
 .btn-outline {
-  background: transparent;
-  color: var(--color-hero-text);
-  border: 1.5px solid rgba(241,245,249,0.3);
+  background: rgba(255,255,255,0.08);
+  color: #ffffff;
+  border: 1.5px solid rgba(241,245,249,0.75);
 }
 .btn-outline:hover {
-  background: rgba(255,255,255,0.08);
-  color: var(--color-hero-text);
-  border-color: rgba(241,245,249,0.6);
+  background: rgba(255,255,255,0.18);
+  color: #ffffff;
+  border-color: rgba(241,245,249,1);
 }
 .btn-outline-dark {
   background: transparent;
@@ -272,9 +272,10 @@ section:nth-child(even) {
 .hero__name {
   font-size: clamp(2.5rem, 7vw, 5rem);
   font-weight: 800;
-  color: var(--color-hero-text);
+  color: #ffffff;
   line-height: 1.05;
   margin-bottom: 20px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
 }
 .hero__name .accent { color: var(--color-accent); }
 .hero__typewriter {
@@ -309,18 +310,18 @@ section:nth-child(even) {
   display: flex;
   gap: 48px;
   padding-top: 32px;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
 .stat__num {
   display: block;
   font-size: 2rem;
   font-weight: 800;
-  color: var(--color-hero-text);
+  color: #ffffff;
   line-height: 1;
 }
 .stat__label {
   font-size: 0.8rem;
-  color: var(--color-hero-muted);
+  color: #cbd5e1;
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.08em;

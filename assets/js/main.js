@@ -32,6 +32,12 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
+// Hero elements are above the fold — make visible immediately without waiting for scroll
+document.querySelectorAll('.hero .reveal').forEach(el => {
+  el.classList.add('visible');
+  revealObserver.unobserve(el);
+});
+
 // ============================================================
 // TYPEWRITER
 // ============================================================
