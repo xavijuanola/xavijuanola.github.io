@@ -508,9 +508,9 @@ section:nth-child(even) {
   font-weight: 500;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--color-border);
-  color: var(--color-muted);
-  background: var(--color-surface);
+  border: 1px solid #c7d2e0;
+  color: var(--color-text);
+  background: #ffffff;
   transition: all var(--transition);
 }
 .pub-link:hover {
