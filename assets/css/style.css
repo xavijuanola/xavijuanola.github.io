@@ -272,12 +272,17 @@ section:nth-child(even) {
 .hero__name {
   font-size: clamp(2.5rem, 7vw, 5rem);
   font-weight: 800;
-  color: #ffffff;
+  background: linear-gradient(135deg, #e2e8f0 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   line-height: 1.05;
   margin-bottom: 20px;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
 }
-.hero__name .accent { color: var(--color-accent); }
+.hero__name .accent {
+  -webkit-text-fill-color: var(--color-accent);
+  color: var(--color-accent);
+}
 .hero__typewriter {
   font-size: clamp(1.1rem, 3vw, 1.5rem);
   font-weight: 500;
@@ -315,8 +320,8 @@ section:nth-child(even) {
 .stat__num {
   display: block;
   font-size: 2rem;
-  font-weight: 800;
-  color: #ffffff;
+  font-weight: 700;
+  color: var(--color-accent-light);
   line-height: 1;
 }
 .stat__label {
