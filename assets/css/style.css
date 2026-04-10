@@ -120,14 +120,16 @@ section:nth-child(even) {
   box-shadow: 0 4px 16px rgba(99,102,241,0.4);
 }
 .btn-outline {
-  background: rgba(255,255,255,0.08);
-  color: #ffffff;
-  border: 1.5px solid rgba(241,245,249,0.75);
+  background: #ffffff;
+  color: var(--color-text);
+  border: 1.5px solid #c7d2e0;
 }
 .btn-outline:hover {
-  background: rgba(255,255,255,0.18);
-  color: #ffffff;
-  border-color: rgba(241,245,249,1);
+  background: #ffffff;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99,102,241,0.15);
 }
 .btn-outline-dark {
   background: transparent;
