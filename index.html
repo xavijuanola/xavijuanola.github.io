@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261124c">
 </head>
 <body>
 
@@ -34,7 +34,6 @@
       <ul class="navbar__links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Code</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Timeline</a></li>
         <li><a href="#teaching">Teaching</a></li>
@@ -140,6 +139,7 @@
                 <a href="https://magdalenafuentes.com/" target="_blank" rel="noopener">Magdalena Fuentes</a>,
                 <a href="https://www.upf.edu/web/gloria-haro" target="_blank" rel="noopener">Gloria Haro</a>
               </p>
+              <p class="pub-card__desc">Releases the code and trained models of SSL-SaN, which learns from silence and noise to stay quiet when the audio does not match the image.</p>
               <div class="pub-card__links">
                 <a href="https://bmvc2025.bmva.org/proceedings/364/" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-book"></i> Proceedings</a>
                 <a href="https://xavijuanola.github.io/SSL-SaN" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-globe"></i> Project</a>
@@ -190,6 +190,7 @@
                 <a href="https://www.upf.edu/web/gloria-haro" target="_blank" rel="noopener">Gloria Haro</a>,
                 <a href="https://magdalenafuentes.com/" target="_blank" rel="noopener">Magdalena Fuentes</a>
               </p>
+              <p class="pub-card__desc">Releases the IS3+ test set and the metrics to evaluate localization with silence, noise and offscreen sounds.</p>
               <div class="pub-card__links">
                 <a href="https://ieeexplore.ieee.org/document/10890384" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-book"></i> Proceedings</a>
                 <a href="https://xavijuanola.github.io/vssleval" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-globe"></i> Project</a>
@@ -215,54 +216,14 @@
                 <strong>Xavier Juanola</strong>,
                 <a href="https://www.upf.edu/web/gloria-haro" target="_blank" rel="noopener">Gloria Haro</a>
               </p>
+              <p class="pub-card__desc">Includes an online demo to run SLAVC on your own image and audio.</p>
               <div class="pub-card__links">
-                <a href="http://www.ipol.im/pub/art/2024/525/" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-globe"></i> Paper page</a>
+                <a href="http://www.ipol.im/pub/art/2024/525/" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-play"></i> Paper and online demo</a>
                 <a href="http://www.ipol.im/pub/art/2024/525/article.pdf" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
               </div>
             </div>
           </article>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- CODE, DATA AND DEMOS -->
-  <section class="section" id="projects">
-    <div class="container section__grid">
-      <h2 class="section-title">Code, data and demos</h2>
-      <div>
-        <div class="projects-grid">
-
-          <article class="project-card reveal">
-            <h3 class="project-card__title">SSL-SaN</h3>
-            <p class="project-card__desc">Code for the BMVC 2025 paper: a self-supervised localization model trained with silence and noise, so it stays quiet when the audio does not match the image.</p>
-            <div class="tags"><span class="badge">PyTorch</span><span class="badge">Audio-Visual</span><span class="badge">Self-supervised</span><span class="badge">BMVC 2025</span></div>
-            <div class="project-card__links">
-              <a href="https://github.com/xavijuanola/SSL_SaN" target="_blank" rel="noopener" class="pub-link"><i class="fab fa-github"></i> Code</a>
-              <a href="https://xavijuanola.github.io/SSL-SaN" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-globe"></i> Project page</a>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <h3 class="project-card__title">IS3+ and negative-audio metrics</h3>
-            <p class="project-card__desc">Extended test set and metrics to evaluate localization models with negative audio: silence, noise and offscreen sounds.</p>
-            <div class="tags"><span class="badge">Evaluation</span><span class="badge">Benchmarking</span><span class="badge">ICASSP 2025</span></div>
-            <div class="project-card__links">
-              <a href="https://github.com/xavijuanola/vssl_eval" target="_blank" rel="noopener" class="pub-link"><i class="fab fa-github"></i> Code</a>
-              <a href="https://xavijuanola.github.io/vssleval" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-globe"></i> Project page</a>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <h3 class="project-card__title">SLAVC online demo</h3>
-            <p class="project-card__desc">Run the SLAVC localization method on your own image and audio pairs, straight from the IPOL article page.</p>
-            <div class="tags"><span class="badge">Demo</span><span class="badge">Interactive</span><span class="badge">IPOL 2024</span></div>
-            <div class="project-card__links">
-              <a href="http://www.ipol.im/pub/art/2024/525/" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-play"></i> Try the demo</a>
-            </div>
-          </article>
-
-        </div>
       </div>
     </div>
   </section>
@@ -553,6 +514,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=20261124c"></script>
 </body>
 </html>

@@ -463,6 +463,7 @@ ul { list-style: none; }
 .pub-card__authors strong { color: var(--color-text); font-weight: 600; }
 .pub-card__authors a { color: var(--color-muted); }
 .pub-card__authors a:hover { color: var(--color-accent); }
+.pub-card__desc { font-size: 0.93rem; color: var(--color-muted); line-height: 1.55; margin-bottom: 12px; max-width: 42em; }
 .pub-card__links { display: flex; flex-wrap: wrap; gap: 4px 18px; }
 .pub-link { font-size: 0.9rem; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
 
