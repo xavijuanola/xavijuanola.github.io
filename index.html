@@ -325,27 +325,34 @@
         <!-- Joint timeline. Year labels mark the start of each year; rows between two labels are that year
              (2019 to 2021 are split in two halves). Brackets span the rows an item lasted. -->
         <div class="tl">
+          <ul class="tl__legend" aria-label="Timeline legend">
+            <li><span class="tl__key tl__key--edu"></span> Education</li>
+            <li><span class="tl__key tl__key--exp"></span> Experience</li>
+            <li><span class="tl__key tl__key--paper"></span> Paper (conference, workshop or journal)</li>
+            <li><span class="tl__key tl__key--talk"></span> Poster or talk</li>
+            <li><span class="tl__key tl__key--sup"></span> Thesis supervision</li>
+          </ul>
           <div class="tl__head tl__head--edu" aria-hidden="true"><i class="fas fa-graduation-cap"></i> Education</div>
-          <div class="tl__head tl__head--exp" aria-hidden="true"><i class="fas fa-briefcase"></i> Experience and publications</div>
+          <div class="tl__head tl__head--exp" aria-hidden="true"><i class="fas fa-briefcase"></i> Experience and research</div>
           <div class="tl__axis" aria-hidden="true"></div>
-          <span class="tl__year" style="grid-row: 2" aria-hidden="true">Now</span>
-          <span class="tl__year" style="grid-row: 4" aria-hidden="true">2026</span>
-          <span class="tl__year" style="grid-row: 10" aria-hidden="true">2025</span>
-          <span class="tl__year" style="grid-row: 13" aria-hidden="true">2024</span>
-          <span class="tl__year" style="grid-row: 14" aria-hidden="true">2023</span>
-          <span class="tl__year" style="grid-row: 16" aria-hidden="true">2022</span>
-          <span class="tl__year" style="grid-row: 18" aria-hidden="true">2021</span>
-          <span class="tl__year" style="grid-row: 20" aria-hidden="true">2020</span>
-          <span class="tl__year" style="grid-row: 22" aria-hidden="true">2019</span>
-          <span class="tl__year tl__year--end" style="grid-row: 22" aria-hidden="true">2014</span>
-          <div class="tl__range tl__range--edu tl__range--open" style="grid-row: 2 / 15" aria-hidden="true"></div>
-          <div class="tl__range tl__range--exp" style="grid-row: 15 / 17" aria-hidden="true"></div>
-          <div class="tl__range tl__range--edu" style="grid-row: 17 / 19" aria-hidden="true"></div>
-          <div class="tl__range tl__range--exp" style="grid-row: 17 / 21" aria-hidden="true"></div>
-          <div class="tl__range tl__range--edu" style="grid-row: 19 / 21" aria-hidden="true"></div>
-          <div class="tl__range tl__range--edu" style="grid-row: 21 / 23" aria-hidden="true"></div>
+          <span class="tl__year" style="grid-row: 3" aria-hidden="true">Now</span>
+          <span class="tl__year" style="grid-row: 5" aria-hidden="true">2026</span>
+          <span class="tl__year" style="grid-row: 11" aria-hidden="true">2025</span>
+          <span class="tl__year" style="grid-row: 14" aria-hidden="true">2024</span>
+          <span class="tl__year" style="grid-row: 15" aria-hidden="true">2023</span>
+          <span class="tl__year" style="grid-row: 17" aria-hidden="true">2022</span>
+          <span class="tl__year" style="grid-row: 19" aria-hidden="true">2021</span>
+          <span class="tl__year" style="grid-row: 21" aria-hidden="true">2020</span>
+          <span class="tl__year" style="grid-row: 23" aria-hidden="true">2019</span>
+          <span class="tl__year tl__year--end" style="grid-row: 23" aria-hidden="true">2014</span>
+          <div class="tl__range tl__range--edu tl__range--open" style="grid-row: 3 / 16" aria-hidden="true"></div>
+          <div class="tl__range tl__range--exp" style="grid-row: 16 / 18" aria-hidden="true"></div>
+          <div class="tl__range tl__range--edu" style="grid-row: 18 / 20" aria-hidden="true"></div>
+          <div class="tl__range tl__range--exp" style="grid-row: 18 / 22" aria-hidden="true"></div>
+          <div class="tl__range tl__range--edu" style="grid-row: 20 / 22" aria-hidden="true"></div>
+          <div class="tl__range tl__range--edu" style="grid-row: 22 / 24" aria-hidden="true"></div>
 
-          <article class="tl__card tl__card--edu reveal" style="grid-row: 2 / 15">
+          <article class="tl__card tl__card--edu reveal" style="grid-row: 3 / 16">
             <span class="tl__kind">Education</span>
             <span class="timeline-card__date">Nov 2022 to present</span>
             <h3 class="timeline-card__title">PhD, Information &amp; Communication Technologies</h3>
@@ -353,56 +360,56 @@
             <p class="timeline-card__desc">Researching audio-visual sound source localization in the IMVA group. Advisors: Gloria Haro (UPF) and Magdalena Fuentes (NYU). FPI doctoral scholarship (2023 to 2026). Part of the MuVAU project (Spanish Ministry of Science).</p>
             <div class="tags"><span class="badge">Deep Learning</span><span class="badge">Audio-Visual</span><span class="badge">Research</span></div>
           </article>
-          <div class="tl__point tl__point--sup" style="grid-row: 2" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp tl__card--pub reveal" style="grid-row: 2">
+          <div class="tl__point tl__point--sup" style="grid-row: 3" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp tl__card--pub tl__card--sup reveal" style="grid-row: 3">
             <span class="tl__kind">Supervision</span>
             <span class="badge badge--sup">MSc thesis</span>
             <a href="#supervision">Co-supervised the master thesis of Alejandro Donaire Salvador (Master in Computer Vision)</a>
           </article>
-          <div class="tl__point tl__point--sup" style="grid-row: 3" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp tl__card--pub reveal" style="grid-row: 3">
+          <div class="tl__point tl__point--sup" style="grid-row: 4" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp tl__card--pub tl__card--sup reveal" style="grid-row: 4">
             <span class="tl__kind">Supervision</span>
             <span class="badge badge--sup">BSc thesis</span>
             <a href="#supervision">Co-supervised the bachelor thesis of Luca Franceschi (UPF)</a>
           </article>
-          <div class="tl__point tl__point--pub" style="grid-row: 4" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp tl__card--pub reveal" style="grid-row: 4">
+          <div class="tl__point tl__point--talk" style="grid-row: 5" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp tl__card--pub tl__card--talk reveal" style="grid-row: 5">
             <span class="tl__kind">Poster</span>
-            <span class="badge">DLBCN 2025</span>
+            <span class="badge badge--talk">DLBCN 2025</span>
             <a href="https://sites.google.com/view/dlbcn2025/program/posters" target="_blank" rel="noopener">Poster of the BMVC 2025 paper at the Deep Learning Barcelona Symposium, CosmoCaixa</a>
           </article>
-          <div class="tl__point tl__point--pub" style="grid-row: 5" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp tl__card--pub reveal" style="grid-row: 5">
-            <span class="tl__kind">Publication</span>
-            <span class="badge">BMVC 2025</span>
+          <div class="tl__point tl__point--paper" style="grid-row: 6" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp tl__card--pub tl__card--paper reveal" style="grid-row: 6">
+            <span class="tl__kind">Paper</span>
+            <span class="badge badge--paper">BMVC 2025</span>
             <a href="https://bmvc2025.bmva.org/proceedings/364/" target="_blank" rel="noopener">Learning from Silence and Noise for Visual Sound Source Localization</a>
           </article>
-          <div class="tl__point tl__point--pub" style="grid-row: 6" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp tl__card--pub reveal" style="grid-row: 6">
+          <div class="tl__point tl__point--talk" style="grid-row: 7" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp tl__card--pub tl__card--talk reveal" style="grid-row: 7">
             <span class="tl__kind">Poster</span>
-            <span class="badge">ACMCV 2025</span>
+            <span class="badge badge--talk">ACMCV 2025</span>
             <a href="https://www.cvc.uab.es/acmcv/wp-content/uploads/2026/07/Programa-Posters-1.pdf" target="_blank" rel="noopener">Poster of the BMVC 2025 paper at the Annual Catalan Meeting on Computer Vision, Computer Vision Center</a>
           </article>
-          <div class="tl__point tl__point--sup" style="grid-row: 7" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp tl__card--pub reveal" style="grid-row: 7">
+          <div class="tl__point tl__point--sup" style="grid-row: 8" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp tl__card--pub tl__card--sup reveal" style="grid-row: 8">
             <span class="tl__kind">Supervision</span>
             <span class="badge badge--sup">BSc thesis</span>
             <a href="#supervision">Co-supervised the bachelor thesis of Albert Santos Moya: Chatting with Images (UPF)</a>
           </article>
-          <div class="tl__point tl__point--pub" style="grid-row: 8" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp tl__card--pub reveal" style="grid-row: 8">
-            <span class="tl__kind">Publication</span>
-            <span class="badge">CVPR Workshop 2025</span>
+          <div class="tl__point tl__point--paper" style="grid-row: 9" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp tl__card--pub tl__card--paper reveal" style="grid-row: 9">
+            <span class="tl__kind">Paper</span>
+            <span class="badge badge--paper">CVPR Workshop 2025</span>
             <a href="https://sightsound.org/papers/2025/Xavier_Juanola_Visual_Sound_Source_Localization_Assessing_Performance_with_Both_Positive_and_Negative_Audio.pdf" target="_blank" rel="noopener">Visual Sound Source Localization: Assessing Performance with Both Positive and Negative Audio</a>
           </article>
-          <div class="tl__point tl__point--pub" style="grid-row: 9" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp tl__card--pub reveal" style="grid-row: 9">
-            <span class="tl__kind">Publication</span>
-            <span class="badge">ICASSP 2025</span>
+          <div class="tl__point tl__point--paper" style="grid-row: 10" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp tl__card--pub tl__card--paper reveal" style="grid-row: 10">
+            <span class="tl__kind">Paper</span>
+            <span class="badge badge--paper">ICASSP 2025</span>
             <a href="https://ieeexplore.ieee.org/document/10890384" target="_blank" rel="noopener">A Critical Assessment of Visual Sound Source Localization Models Including Negative Audio</a>
           </article>
-          <div class="tl__point tl__point--visit" style="grid-row: 10" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp reveal" style="grid-row: 10">
+          <div class="tl__point tl__point--visit" style="grid-row: 11" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp reveal" style="grid-row: 11">
             <span class="tl__kind">Experience</span>
             <span class="timeline-card__date">Sep to Dec 2024</span>
             <h3 class="timeline-card__title">Visiting Scholar</h3>
@@ -410,19 +417,19 @@
             <p class="timeline-card__desc">Collaborated with Magdalena Fuentes on sound localization research. Culminated in ICASSP 2025 publication.</p>
             <div class="tags"><span class="badge">Research</span><span class="badge">Collaboration</span></div>
           </article>
-          <div class="tl__point tl__point--pub" style="grid-row: 11" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp tl__card--pub reveal" style="grid-row: 11">
+          <div class="tl__point tl__point--talk" style="grid-row: 12" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp tl__card--pub tl__card--talk reveal" style="grid-row: 12">
             <span class="tl__kind">Poster</span>
-            <span class="badge">SANE 2024</span>
+            <span class="badge badge--talk">SANE 2024</span>
             <a href="https://www.saneworkshop.org/sane2024/" target="_blank" rel="noopener">Poster at Speech and Audio in the Northeast, Google, Cambridge, MA</a>
           </article>
-          <div class="tl__point tl__point--pub" style="grid-row: 12" aria-hidden="true"></div>
-          <article class="tl__card tl__card--exp tl__card--pub reveal" style="grid-row: 12">
-            <span class="tl__kind">Publication</span>
-            <span class="badge">IPOL MLBriefs 2024</span>
+          <div class="tl__point tl__point--paper" style="grid-row: 13" aria-hidden="true"></div>
+          <article class="tl__card tl__card--exp tl__card--pub tl__card--paper reveal" style="grid-row: 13">
+            <span class="tl__kind">Paper</span>
+            <span class="badge badge--paper">IPOL MLBriefs 2024</span>
             <a href="http://www.ipol.im/pub/art/2024/525/" target="_blank" rel="noopener">A Brief Analysis of SLAVC method for Sound Source Localization</a>
           </article>
-          <article class="tl__card tl__card--exp reveal" style="grid-row: 15 / 17">
+          <article class="tl__card tl__card--exp reveal" style="grid-row: 16 / 18">
             <span class="tl__kind">Experience</span>
             <span class="timeline-card__date">2021 to 2022</span>
             <h3 class="timeline-card__title">Data Scientist</h3>
@@ -430,13 +437,13 @@
             <p class="timeline-card__desc">Led predictive modeling using Salesforce data to assess offer acceptance probabilities. Contributed to AI conversational agent development. Served as global AI consultant.</p>
             <div class="tags"><span class="badge">ML</span><span class="badge">NLP</span><span class="badge">Consulting</span></div>
           </article>
-          <article class="tl__card tl__card--edu reveal" style="grid-row: 17 / 19">
+          <article class="tl__card tl__card--edu reveal" style="grid-row: 18 / 20">
             <span class="tl__kind">Education</span>
             <span class="timeline-card__date">2020 to 2021</span>
             <h3 class="timeline-card__title">MS, Astrophysics &amp; Cosmology</h3>
             <p class="timeline-card__org">Universitat Autònoma de Barcelona (UAB)</p>
           </article>
-          <article class="tl__card tl__card--exp reveal" style="grid-row: 17 / 21">
+          <article class="tl__card tl__card--exp reveal" style="grid-row: 18 / 22">
             <span class="tl__kind">Experience</span>
             <span class="timeline-card__date">2019 to 2021</span>
             <h3 class="timeline-card__title">AI/NLP Engineer, then Data Scientist</h3>
@@ -444,13 +451,13 @@
             <p class="timeline-card__desc">Built AI conversational agents for real estate and Liceu using NLP and neural networks. Later developed ML predictive models for Chupa Chups, COMSA Service, and real estate. Created Power BI dashboards.</p>
             <div class="tags"><span class="badge">NLP</span><span class="badge">ML</span><span class="badge">Power BI</span></div>
           </article>
-          <article class="tl__card tl__card--edu reveal" style="grid-row: 19 / 21">
+          <article class="tl__card tl__card--edu reveal" style="grid-row: 20 / 22">
             <span class="tl__kind">Education</span>
             <span class="timeline-card__date">2019 to 2020</span>
             <h3 class="timeline-card__title">MS, Intelligent Interactive Systems</h3>
             <p class="timeline-card__org">Universitat Pompeu Fabra (UPF)</p>
           </article>
-          <article class="tl__card tl__card--edu reveal" style="grid-row: 21 / 23">
+          <article class="tl__card tl__card--edu reveal" style="grid-row: 22 / 24">
             <span class="tl__kind">Education</span>
             <span class="timeline-card__date">2014 to 2019</span>
             <h3 class="timeline-card__title">BS, Theoretical Physics</h3>
