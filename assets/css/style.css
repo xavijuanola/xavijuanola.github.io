@@ -561,7 +561,7 @@ ul { list-style: none; }
 .tl__head--exp i { color: var(--tl-exp); }
 
 .tl__axis {
-  grid-column: 3; grid-row: 2 / 19;
+  grid-column: 3; grid-row: 2 / 21;
   justify-self: center;
   width: 2px;
   background: var(--color-border);
